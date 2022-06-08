@@ -1,0 +1,19 @@
+<mat-toolbar color="primary" class="mat-elevation-z6">
+  <span></span>
+  <!-- <a routerLink="/home" routerLinkActive="true">Home</a> -->
+  <a routerLink="/products">Products</a>
+
+  <button mat-button routerLink="/home" routerLinkActive="true">Home</button>
+  <button mat-button routerLink="/products" routerLinkActive="true">
+    Products
+  </button>
+  <span [ngClass]="'filler'"></span>
+  <button
+    mat-raised-button
+    routerLink="/signup"
+    routerLinkActive="true"
+    color="accent"
+  >
+    Sign-Up
+  </button>
+</mat-toolbar>

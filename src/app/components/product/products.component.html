@@ -1,0 +1,14 @@
+<div>
+  <mat-card *ngFor="let product of productsObs | async">
+    <mat-card-header>
+      <mat-card-title>{{ product.name }}</mat-card-title>
+      <mat-card-subtitle>{{ product.brand }}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>{{ product.category }}</mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color="primary" (click)="onSubmit(product)">
+        View More
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</div>
